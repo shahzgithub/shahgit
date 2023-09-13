@@ -1,0 +1,53 @@
+//Q7
+    <!DOCTYPE html>
+    <html lang="en">
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education Qualifications in Pakistan</title>
+        <title>Phone Manufacturers</title>
+    </head>
+    <body>
+        <h1>Education Qualifications in Pakistan</h1>
+    
+        <script>
+            
+            const qualifications = [
+                "SSC (Secondary School Certificate)",
+                "HSC (Higher Secondary School Certificate)",
+                "BCS (Bachelor of Computer Science)",
+                "BS (Bachelor of Science)",
+                "BCOM (Bachelor of Commerce)",
+                "MS (Master of Science)",
+                "M. Phil. (Master of Philosophy)",
+                "PhD (Doctor of Philosophy)"
+            ];
+    
+            
+            document.write("<ul>");
+            qualifications.forEach(function(qualification) {
+                document.write("<li>" + qualification + "</li>");
+            });
+            document.write("</ul>");
+        </script>
+        
+        //Q15
+          <h2>Select a Phone Manufacturer</h2>
+          <script>
+            const manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+            document.write('<select id="manufacturerSelect">');
+            for (let i = 0; i < manufacturers.length; i++) {
+                document.write('<option value="' + manufacturers[i] + '">' + manufacturers[i] + '</option>');
+            }
+            document.write('</select>');
+            document.write('<br><br>');
+            document.write('<button onclick="showSelectedManufacturer()">Show Selected Manufacturer</button>');
+            function showSelectedManufacturer() {
+                const selectElement = (document.getElementById("manufacturerSelect"));
+                const selectedManufacturer = selectElement.value;
+                alert("Selected Manufacturer: " + selectedManufacturer);
+            }
+        </script>
+        </body>
+    </html>
